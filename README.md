@@ -4,3 +4,5 @@
 
 Projekt to strona internetowa - blog kulinarny, na którym użytkownik może zarówno czytać wpisy na blogu jak i przeglądać, a także szukać przepisów na konkretne potrawy.
 Istnieje także podstawowa możliwość logowania oraz fikcyjnego dodawania wpisów oraz przepisów (prawdziwa funkcjonalność zostanie dodana w projekcie drugim).
+
+![Tekst alternatywny]([ścieżka/do/obrazu.jpg](https://github.com/BStchw/Projekt1_www/blob/master/diagram_komp.png)https://github.com/BStchw/Projekt1_www/blob/master/diagram_komp.png)
