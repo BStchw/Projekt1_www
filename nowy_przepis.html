@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zaloguj się</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/icon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+</head>
+<body>
+<header>
+    <div class="title">
+        <h1><a href="index.html">ImperatorJedzenia.pl<i class="material-icons">dinner_dining</i></a></h1>
+    </div>
+    <nav class="menu">
+        <ul>
+            <a href="index.html">Blog<i class="material-icons">library_books</i></a>
+            <a href="przepisy_przegląd.html">Przepisy<i class="material-icons">brunch_dining</i></a>
+            <a href="zaloguj.html" class="active">Zaloguj się<i class="material-icons">account_circle</i></a>
+        </ul>
+    </nav>
+</header>
+<article>
+    <div class="nowy_wpis">
+        <form action="przetworz_formularz.php" method="post" enctype="multipart/form-data">
+          <label for="tytul">Tytuł:</label>
+          <input type="text" id="tytul" name="tytul" required>
+
+          <label for="zdjecie">Zdjęcie:</label>
+          <input type="file" id="zdjecie" name="zdjecie" accept="image/*" required>
+
+          <label for="wpis">Przepis:</label>
+          <textarea id="wpis" name="wpis" required></textarea>
+
+            <button type="button" onclick="submitForm()">Dodaj Przepis</button>
+        </form>
+    </div>
+</article>
+<script src="js/search.js"></script>
+<script src="js/UserManager.js"></script>
+<script src="js/submit.js"></script>
+
+<footer>
+    <a href="kontakt.html">Kontakt</a>
+    <div class="special_links">
+        <ul>
+            <a href="#"><i class="material-icons">mail</i>  imperatorjedzeni@email.com</a>
+        </ul>
+    </div>
+    <p>&copy; 2023 Moja Strona. Wszelkie prawa zastrzeżone.</p>
+</footer>
+</body>
+</html>

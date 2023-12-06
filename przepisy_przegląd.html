@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Dania główne</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link rel="icon" href="images/icon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+</head>
+<body>
+<header>
+  <div class="title">
+    <h1><a href="index.html">ImperatorJedzenia.pl<i class="material-icons">dinner_dining</i></a></h1>
+
+  </div>
+  <nav class="menu">
+    <ul>
+      <a href="index.html">Blog<i class="material-icons">library_books</i></a>
+      <a href="przepisy_przegląd.html">Przepisy<i class="material-icons">brunch_dining</i></a>
+      <a href="zaloguj.html">Zaloguj się<i class="material-icons">account_circle</i></a>
+    </ul>
+
+    <a class = "search-bar">
+      <input type="text" id="searchInput" placeholder="Szukaj przepis" oninput="searchTitles()">
+      <button onclick="searchTitles()"><i class="material-icons">search</i></button>
+    </a></li>
+  </nav>
+</header>
+  <article>
+    <div class="przepis" id="pieczona karkówka w sosie rozmarynowym">
+      <h3 class="p_title"><a href="przepisy/przepis1.html">Pieczona karkówka w sosie rozmarynowym</a></h3>
+      <img src="images/karkowka.JPG">
+    </div>
+    <div class="przepis" id="azjatycka_kapusta_na_parze">
+        <h3 class="p_title"><a href="przepisy/przepis2.html">Azjatycka kapusta na parze</a></h3>
+      <img src="images/kapusta.JPG">
+    </div>
+
+  </article>
+  <script src="js/search.js"></script>
+  <script src="js/UserManager.js"></script>
+
+  <footer>
+    <a href="kontakt.html">Kontakt</a>
+    <div class="special_links">
+      <ul>
+        <a href="#"><i class="material-icons">mail</i>  imperatorjedzeni@email.com</a>
+      </ul>
+    </div>
+    <p>&copy; 2023 Moja Strona. Wszelkie prawa zastrzeżone.</p>
+  </footer>
+</body>
+</html>

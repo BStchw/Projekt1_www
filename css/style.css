@@ -1,16 +1,22 @@
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
 body {
   font-family: Verdana, sans-serif;
   font-size: 20px;
+  background-image: url('../images/tło1.jpg');
+  background-size: auto;
+  background-position: center;
+  background-repeat: repeat;
+  margin: 0;
 }
+
+
 a {
   text-decoration: none;
   display: inline-block;
+  color: black;
 }
 
 p {
@@ -18,7 +24,9 @@ p {
 }
 
 h3 {
+  font-family: 'Lobster', sans-serif;
   margin-bottom: 5%;
+  font-size: 30px;
 }
 
 li {
@@ -28,94 +36,269 @@ img {
   max-width: 100%;
 }
 header {
-  margin-top: 5%;
   font-family: Verdana, sans-serif;
   display: block;
 }
 article {
   width: 90%;
-  heigh: 90%;
   margin: 10px;
   font-family: Verdana, sans-serif;
 
 }
 div {
   width: 90%;
-  heigh: 90%;
   margin: 10px;
   font-family: Verdana, sans-serif;
 
 
 }
 
-.menu {
-  background-color: rgb(116, 183, 109);
-  margin: auto;
-  padding: 15px;
+footer  {
+  background-color: rgb(241, 155, 83);
   font-size: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2%;
+  font-family: 'Lobster', sans-serif;
 }
+.special_links {
+  font-family: 'Lobster', sans-serif;
+}
+
+.menu {
+  background-color: rgb(241, 155, 83);
+  margin: auto;
+  padding: 0.2%;
+  font-size: 32px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Lobster', sans-serif;
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.menu a {
+  margin-left: 20px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  margin-right: 5%;
+}
+
+/* Dodaj nowe style dla wyszukiwarki */
+.search-bar input {
+  padding: 8px;
+  height: 60px;
+  width: 300px;
+  border: none;
+  outline: none;
+  border-bottom-left-radius: 30px;
+  border-top-left-radius: 30px;
+
+}
+
+.search-bar button {
+  border: none;
+  padding: 8px 15px;
+  cursor: pointer;
+  margin-right: 10%;
+  height: 60px;
+  width: 80px;
+  border-bottom-right-radius: 30px;
+  border-top-right-radius: 30px;
+  font-family: 'Lobster', sans-serif;
+}
+
+
 .przepis {
-  background-color: rgba(255, 255, 255, 0.8);;
   width: 70%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9);
   margin: auto;
   margin-top: 5%;
   display: block;
-  border-radius: 15px;
+  border-radius: 40px;
   padding: 5%;
   font-family: Verdana, sans-serif;
-
-
+  border: 15px solid transparent;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  background-color: rgba(255, 255, 255, 0.9);
 }
+.przepis h3 {
+  text-decoration: underline;
+}
+
 .wpis {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.9);
   width: 80%;
   display: block;
   margin-left: auto;
   margin-right: auto;
   padding: 5%;
   font-family: Verdana, sans-serif;
+  position: relative;
 }
 
 .p_title {
   text-align: center;
-  margin: 0;
+  margin-bottom: 1%;
+  margin-top: 1%;
 }
-.b_konkurs {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  height: 10%;
-  background-color: rgb(116, 183, 109);
-  border-radius: 12px;
-  padding: 20px;
-  font-family: Verdana, sans-serif;
-  font-size: 40px;
+
+.p_title a {
+  text-decoration: underline;
+
 }
 
 .title {
+  color: black;
   text-align: center;
-  width: 70%;
-  display: inline;
-  font-size: 20px;
+  margin-bottom: 2%;
+  font-family: 'Lobster', sans-serif;
+  font-weight: 400;  display: block;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.title a{
+  padding: 1%;
+  background-color: rgb(241, 155, 83);
+  border-radius: 40px;
+}
+
+button {
+  font-family: 'Lobster', sans-serif;
 }
 
 
-#button {
-  background-color: gray;
+nav.menu .material-icons {
+  font-size: 2em;
+  vertical-align: middle;
+
+
+}
+div.title .material-icons {
+  font-size: 2em;
+  vertical-align: middle;
+
+
+}
+
+.login-form  {
+  background-color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  width: 80%;
   padding: 5%;
-  margin-top: 5%;
-  margin-bottom: 1%;
-  text-align: center;
+  font-family: 'Lobster', sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 30px;
+}
+
+.login-form input {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 18px;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.login-form label,
+.login-form button {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 30px;
   border-radius: 50px;
-  font-size: 40px;
 }
-#icon {
-  width: 10%;
-  height: 10%;
-  display: inline;
+.user_options {
+  background-color: rgba(255, 255, 255, 0.9);
+  font-family: 'Lobster', sans-serif;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: auto;
 }
+
+.user_options h1,
+.user_options h2 {
+  font-size: 30px;
+}
+
+.button_container {
+  display: flex;
+  flex-direction: row;
+  font-family: 'Lobster', sans-serif;
+
+}
+
+.button_container a button {
+  font-family: 'Lobster', sans-serif;
+  background-color: rgb(241, 155, 83);
+  text-align: center;
+  padding: 5%;
+  margin: 0 5px;
+  height: 100%;
+  font-size: 30px;
+  border-radius: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nowy_wpis {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: rgba(255, 255, 255, 0.9);
+  font-family: 'Lobster', sans-serif;
+  width: 50%;
+  font-size: 30px;
+}
+
+.nowy_wpis form {
+  width: 80%;
+  max-width: 400px; /* Ustaw maksymalną szerokość formularza */
+}
+
+.nowy_wpis label {
+  margin-bottom: 8px;
+}
+
+.nowy_wpis input[type="text"],
+.nowy_wpis input[type="file"],
+.nowy_wpis textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+.nowy_wpis button {
+  background-color: rgb(241, 155, 83);
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 50px;
+  font-size: 30px;
+  margin-bottom: 5%;
+}
+
 
 @media (max-width: 992px) {
   body {
