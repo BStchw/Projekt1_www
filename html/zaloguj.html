@@ -3,11 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <title>Zaloguj się</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-  <link rel="icon" href="images/icon.png" type="image/x-icon">
-  <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+  <link rel="icon" href="../images/icon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="../images/icon.png" type="image/x-icon">
+  <script src="../js/search.js"></script>
+  <script src="../js/UserManager.js"></script>
 </head>
 <body>
 <header>
@@ -23,24 +25,16 @@
   </nav>
 </header>
 <article>
-  <div class="nowy_wpis">
-    <form action="przetworz_formularz.php" method="post" enctype="multipart/form-data">
-      <label for="tytul">Tytuł:</label>
-      <input type="text" id="tytul" name="tytul" required>
+  <div class="login-form">
+    <label for="username">Nazwa użytkownika:</label>
+    <input type="text" id="username" placeholder="Wprowadź nazwę użytkownika">
 
-      <label for="zdjecie">Zdjęcie:</label>
-      <input type="file" id="zdjecie" name="zdjecie" accept="image/*" required>
+    <label for="password">Hasło:</label>
+    <input type="password" id="password" placeholder="Wprowadź hasło">
 
-      <label for="wpis">Przepis:</label>
-      <textarea id="wpis" name="wpis" required></textarea>
-
-      <button type="button" onclick="submitForm()">Dodaj Przepis</button>
-    </form>
+    <button onclick="login()">Zaloguj się<i class="material-icons">login</i></button>
   </div>
 </article>
-<script src="js/search.js"></script>
-<script src="js/UserManager.js"></script>
-
 <footer>
   <a href="kontakt.html">Kontakt</a>
   <div class="special_links">
@@ -50,5 +44,6 @@
   </div>
   <p>&copy; 2023 Moja Strona. Wszelkie prawa zastrzeżone.</p>
 </footer>
+
 </body>
 </html>

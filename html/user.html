@@ -3,13 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <title>Zaloguj się</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-  <link rel="icon" href="images/icon.png" type="image/x-icon">
-  <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
-  <script src="js/search.js"></script>
-  <script src="js/UserManager.js"></script>
+  <link rel="icon" href="../images/icon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="../images/icon.png" type="image/x-icon">
+
+  <script src="../js/search.js"></script>
+  <script src="../js/UserManager.js"></script>
 </head>
 <body>
 <header>
@@ -25,14 +26,17 @@
   </nav>
 </header>
 <article>
-  <div class="login-form">
-    <label for="username">Nazwa użytkownika:</label>
-    <input type="text" id="username" placeholder="Wprowadź nazwę użytkownika">
-
-    <label for="password">Hasło:</label>
-    <input type="password" id="password" placeholder="Wprowadź hasło">
-
-    <button onclick="login()">Zaloguj się<i class="material-icons">login</i></button>
+  <div class="user_options">
+    <h1>Witaj</h1>
+    <h2>Co chcesz zrobić?</h2>
+    <div class="button_container">
+      <a href="nowy_przepis.html">
+        <button type="button">Dodaj nowy przepis</button>
+      </a>
+      <a href="nowy_wpis.html">
+        <button type="button">Dodaj nowy wpis</button>
+      </a>
+    </div>
   </div>
 </article>
 <footer>
@@ -44,6 +48,7 @@
   </div>
   <p>&copy; 2023 Moja Strona. Wszelkie prawa zastrzeżone.</p>
 </footer>
+
 
 </body>
 </html>
